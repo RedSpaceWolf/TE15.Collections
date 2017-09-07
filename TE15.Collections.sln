@@ -5,6 +5,12 @@ VisualStudioVersion = 15.0.26730.12
 MinimumVisualStudioVersion = 10.0.40219.1
 Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "TE15.Collections", "TE15.Collections\TE15.Collections.csproj", "{CC74C051-4B3A-4894-8536-FE71E824F751}"
 EndProject
+Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "tests", "tests", "{CC8091B1-3674-4B6B-A5A3-8D6E4F500B0E}"
+EndProject
+Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "src", "src", "{87BBEEC4-0AB8-437D-AD5E-A81EBFFF81B2}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "TE15.Collections.Tests", "TE15.Collections.Tests\TE15.Collections.Tests.csproj", "{ACAF570E-465F-406D-9977-66A7CE226ACF}"
+EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
 		Debug|Any CPU = Debug|Any CPU
@@ -15,9 +21,17 @@ Global
 		{CC74C051-4B3A-4894-8536-FE71E824F751}.Debug|Any CPU.Build.0 = Debug|Any CPU
 		{CC74C051-4B3A-4894-8536-FE71E824F751}.Release|Any CPU.ActiveCfg = Release|Any CPU
 		{CC74C051-4B3A-4894-8536-FE71E824F751}.Release|Any CPU.Build.0 = Release|Any CPU
+		{ACAF570E-465F-406D-9977-66A7CE226ACF}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{ACAF570E-465F-406D-9977-66A7CE226ACF}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{ACAF570E-465F-406D-9977-66A7CE226ACF}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{ACAF570E-465F-406D-9977-66A7CE226ACF}.Release|Any CPU.Build.0 = Release|Any CPU
 	EndGlobalSection
 	GlobalSection(SolutionProperties) = preSolution
 		HideSolutionNode = FALSE
+	EndGlobalSection
+	GlobalSection(NestedProjects) = preSolution
+		{CC74C051-4B3A-4894-8536-FE71E824F751} = {87BBEEC4-0AB8-437D-AD5E-A81EBFFF81B2}
+		{ACAF570E-465F-406D-9977-66A7CE226ACF} = {CC8091B1-3674-4B6B-A5A3-8D6E4F500B0E}
 	EndGlobalSection
 	GlobalSection(ExtensibilityGlobals) = postSolution
 		SolutionGuid = {4C3B9A2D-E26B-433D-8CA7-507BA9C673F8}
