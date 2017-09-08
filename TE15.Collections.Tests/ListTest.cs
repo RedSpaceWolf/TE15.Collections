@@ -7,6 +7,20 @@ namespace TE15.Collections.Tests
     public class ListTest
     {
         [TestMethod]
+        public void Empty_List_Should_Return_Count_Zero()
+        {
+            // Arrange
+            var list = new List();
+            var expected = 0;
+
+            // Act
+            var actual = list.Count;
+
+            // Assert
+            Assert.AreEqual(expected, actual);
+        }
+
+        [TestMethod]
         public void Add_One_Should_Return_Count_One()
         {
             // Arrange
@@ -18,6 +32,21 @@ namespace TE15.Collections.Tests
 
             // Assert
             Assert.AreEqual(expected, acctual);
+        }
+
+        [TestMethod]
+        public void Add_More_Values_Then_Initial_Size_Should_Work()
+        {
+            // Arrange
+            var list = new List();
+            var expected = 11;
+            // Act
+            for (int i = 0; i < expected; i++)
+            {
+                list.Add(i);
+            }
+            // Assert
+            Assert.AreEqual(expected, list.Count);
         }
 
         [TestMethod]
